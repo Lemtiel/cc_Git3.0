@@ -1,4 +1,4 @@
-# To Do App #
+# To Do App
 
 <p align="center">
   <a href="https://scottwright-dev.github.io/odin-project-todo-list/">
@@ -10,8 +10,8 @@
   <a href="https://scottwright-dev.github.io/odin-project-todo-list/">Click here for demo</a>
 </p>
 
-
 ### Description
+
 Develop a dynamic To-Do list application as per the <a href="https://www.theodinproject.com/lessons/node-path-javascript-todo-list">assignment</a> from The Odin Project curriculum.
 
 ### Assignment Brief:
@@ -27,8 +27,8 @@ Develop a dynamic To-Do list application as per the <a href="https://www.theodin
 - Incorporate the date-fns library for date and time functions.
 - Implement data persistence using the Web Storage API, specifically localStorage. Ensure the app's stability even if localStorage data retrieval fails.
 
-
 ### Technologies used:
+
 - JavaScript
 - HTML
 - CSS
@@ -51,8 +51,7 @@ Develop a dynamic To-Do list application as per the <a href="https://www.theodin
 
 Realizing and executing my initial ideas came with its own set of complexities. Staying true to the Single Responsibility Principle, while maintaining modularity, proved to be a challenge. My research while brainstorming the project led me to discover the <a href="https://developer.mozilla.org/en-US/docs/Glossary/MVC">MVC</a> design pattern, which provided a valuable framework for better code organisation. For the most part, I believe my code meets the above requirements. However, some of the more intricate functions could benefit from further refactoring to reduce their complexity as well as reconsider some of the names for more concise understanding of each function. Given the scope of this project, however I believe the current state is satisfactory.
 
-
-### Additional features & enhancement ideas 
+### Additional features & enhancement ideas
 
 - Implement a confirmation prompt before the deletion of tasks or lists.
 - Integrate further functionalities from the date-fns library for refined task organisation based on due dates, such as daily, weekly, or monthly categorisation.
