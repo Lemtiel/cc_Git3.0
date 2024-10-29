@@ -78,7 +78,7 @@ export function renderTaskList(taskList) {
     defaultList.appendChild(listIsEmpty);
   } else if (taskList.length === 0) {
     const listIsEmpty = document.createElement("p");
-    listIsEmpty.textContent = "Task list is empty";
+    listIsEmpty.textContent = "la liste des tache est vide";
     listIsEmpty.classList.add("empty-list-text");
 
     defaultList.appendChild(listIsEmpty);
