@@ -73,7 +73,8 @@ export function updateListTitle(listName) {
   
     if (!taskList) {
       const listIsEmpty = document.createElement('p');
-      listIsEmpty.textContent = 'Task list is empty';
+      // modification de la liste des tâche
+      listIsEmpty.textContent = 'la liste des tâche est vide';
       listIsEmpty.classList.add('empty-list-text');
   
       defaultList.appendChild(listIsEmpty);
