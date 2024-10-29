@@ -68,7 +68,7 @@ dialog {
   --line-height: 1.5;
   --letter-spacing: 0.05rem;
   --padding: 1.5rem;
-  --text-color: #f2f2f2;
+  --text-color: green;
   --transition: transform 0.1s ease-in-out;
 }
 
