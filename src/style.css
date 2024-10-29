@@ -132,7 +132,7 @@ dialog {
 .header-text::after {
   content: ")";
 }
-/*clemence modified coats from blue to rgb*/
+/*clemence modified todo brackets from blue to rgb*/
 .header-text::before,
 .header-text::after {
   color: rgb(0, 117, 128);

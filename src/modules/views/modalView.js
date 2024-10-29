@@ -105,7 +105,7 @@ export function openDetailsDialog(task) {
   listSelect.value = task.list;
 
   const submitBtn = formContainer.querySelector('.task-submit-btn');
-  submitBtn.value = 'Save Task';
+  submitBtn.value = 'ajouter tache';// clemence add task a ajouter tache//
   submitBtn.removeEventListener('click', addTaskToList);
   submitBtn.addEventListener('click', () => updateTaskDetails(task));
 
