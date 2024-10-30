@@ -148,10 +148,10 @@ dialog {
 .header-text::after {
   content: ")";
 }
-
+/*clemence modified todo brackets from blue to rgb*/
 .header-text::before,
 .header-text::after {
-  color: var(--accent-color);
+  color: rgb(0, 117, 128);
 }
 
 /* TASK DISPLAY */
