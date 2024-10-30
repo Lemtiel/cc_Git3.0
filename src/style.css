@@ -54,15 +54,18 @@ dialog {
 }
 
 :root {
-  --accent-color: #5F85DB;
-  --accent-lighter: #90B8F8;
-  --background-color: #26282B;
+  --accent-color: #5f85db;
+  --accent-lighter: #90b8f8;
+  --background-color: #26282b;
   --background-shade: #353941;
   --background-hover: #9ba2aa;
   --border: 2px solid var(--background-hover);
   --border-radius: 6px;
-  --filter: brightness(0) saturate(100%) invert(52%) sepia(16%) saturate(1722%) hue-rotate(184deg) brightness(96%) contrast(85%);
-  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --filter: brightness(0) saturate(100%) invert(52%) sepia(16%) saturate(1722%)
+    hue-rotate(184deg) brightness(96%) contrast(85%);
+  --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
+    "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
   --font-size: 16px;
   --font-weight: 400;
   --line-height: 1.5;
@@ -80,8 +83,21 @@ dialog {
   color: var(--text-color);
   font-family: var(--font-family);
   line-height: var(--line-height);
-  margin: 0 auto; 
+  margin: 0 auto;
   max-width: 95%;
+  animation: rainbow 10s linear infinite; /* Ajout de l'animation */
+}
+
+/* Animation pour le changement de couleur effectue par kemgou */
+@keyframes rainbow {
+  0% { background-color: #ff0000; }
+  14% { background-color: #ff7f00; }
+  28% { background-color: #ffff00; }
+  42% { background-color: #00ff00; }
+  57% { background-color: #0000ff; }
+  71% { background-color: #4b0082; }
+  85% { background-color: #9400d3; }
+  100% { background-color: #ff0000; } /* Reviens à la première couleur */
 }
 
 .main-content {
@@ -141,9 +157,9 @@ dialog {
 /* TASK DISPLAY */
 
 .default-list-container {
-  flex: 3; 
+  flex: 3;
   min-width: 100px;
-  max-width: 450px; 
+  max-width: 450px;
   background-color: var(--background-shade);
   border-radius: var(--border-radius);
 }
@@ -155,8 +171,8 @@ dialog {
 
 .list-item {
   display: flex;
-  align-items: center; 
-  justify-content: space-between; 
+  align-items: center;
+  justify-content: space-between;
   border-bottom: 2px solid var(--background-hover);
   padding: 1rem;
 }
@@ -210,7 +226,7 @@ input.list-item-checkbox:hover {
 }
 
 .list-item-checkbox:checked::after {
-  content: "\2713";  /* Unicode for a check mark */
+  content: "\2713"; /* Unicode for a check mark */
   position: absolute;
   font-size: 1.25rem;
   top: 50%;
@@ -240,14 +256,13 @@ input.list-item-checkbox:hover {
   color: var(--accent-color);
 }
 
-
 /* LIST DISPLAY */
 
 .list-manager-container {
   position: relative;
-  flex: 1; 
-  min-width: 150px; 
-  max-width: 250px; 
+  flex: 1;
+  min-width: 150px;
+  max-width: 250px;
   background-color: var(--background-shade);
   border-radius: var(--border-radius);
 }
@@ -262,8 +277,9 @@ input.list-item-checkbox:hover {
 .list-item-del-btn,
 .list-delete-btn,
 .list-item-edit-btn,
-.list-edit-btn  {
-  filter: brightness(0) saturate(100%) invert(57%) sepia(79%) saturate(198%) hue-rotate(178deg) brightness(104%) contrast(105%);
+.list-edit-btn {
+  filter: brightness(0) saturate(100%) invert(57%) sepia(79%) saturate(198%)
+    hue-rotate(178deg) brightness(104%) contrast(105%);
 }
 
 .list-item-del-btn:hover,
@@ -277,7 +293,7 @@ input.list-item-checkbox:hover {
 .list-item-del-btn::before,
 .list-delete-btn::before,
 .list-item-edit-btn::before,
-.list-edit-btn::before  {
+.list-edit-btn::before {
   content: "";
   cursor: pointer;
   display: block;
@@ -323,16 +339,18 @@ input.list-item-checkbox:hover {
   background-color: var(--accent-lighter);
 }
 
-button, input[type="submit"] {
+button,
+input[type="submit"] {
   width: 100%;
   margin: 0 auto;
 }
 
-button:hover, input[type="submit"]:hover {
+button:hover,
+input[type="submit"]:hover {
   background-color: var(--accent-lighter);
 }
 
-/* 'NEW LIST' & 'NEW TASK' BTN POSITIONING */ 
+/* 'NEW LIST' & 'NEW TASK' BTN POSITIONING */
 
 .add-task-btn,
 .new-list-btn {
@@ -341,7 +359,7 @@ button:hover, input[type="submit"]:hover {
   right: 0;
 }
 
-/* NEW LIST MODAL */ 
+/* NEW LIST MODAL */
 
 .new-list-modal {
   background-color: hsl(0, 0%, 90%);
@@ -373,7 +391,7 @@ button:hover, input[type="submit"]:hover {
   font-weight: var(--font-weight);
   height: 2rem;
   margin: 0.5rem 1rem;
-  padding: 0 .25em;
+  padding: 0 0.25em;
   width: 100%;
 }
 
@@ -443,7 +461,8 @@ label {
   top: 0;
   right: 0;
   margin: 0.25rem;
-  filter: brightness(0) saturate(100%) invert(12%) sepia(4%) saturate(1037%) hue-rotate(177deg) brightness(94%) contrast(89%);
+  filter: brightness(0) saturate(100%) invert(12%) sepia(4%) saturate(1037%)
+    hue-rotate(177deg) brightness(94%) contrast(89%);
 }
 
 /* MODAL BG BLUR */
@@ -475,7 +494,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding-bottom: 1%;
+  padding-bottom: 4%; /*Tatou a modifié cette ligne: 1% -> 3%*/
 }
 
 .github-logo {
@@ -489,23 +508,23 @@ footer {
 }
 
 .github-logo:hover {
-  filter: brightness(0) saturate(100%) invert(65%) sepia(46%) saturate(381%) hue-rotate(180deg) brightness(101%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(65%) sepia(46%) saturate(381%)
+    hue-rotate(180deg) brightness(101%) contrast(95%);
 }
 
 /* MOBILE LAYOUT */
 
 @media (max-width: 700px) {
-
   .default-list-container {
     margin: 1rem;
   }
   .list-manager-container {
     display: none;
-    }
+  }
 
-    .main-content {
-      gap: 0;
-      margin-top: 2rem;
+  .main-content {
+    gap: 0;
+    margin-top: 2rem;
   }
 
   dialog {

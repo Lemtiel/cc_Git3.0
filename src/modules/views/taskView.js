@@ -89,7 +89,7 @@ export function createToDoForm() {
 
   const submitBtn = document.createElement('input');
   submitBtn.type = 'submit';
-  submitBtn.value = 'Add Task';
+  submitBtn.value = 'Ajouter tâche';
   submitBtn.classList.add('task-submit-btn');
   form.appendChild(submitBtn);
 
