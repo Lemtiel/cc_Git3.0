@@ -56,10 +56,10 @@ export function createToDoForm() {
   const form = document.createElement('form');
   form.classList.add('todo-form');
 
-  const titleLabel = createInputLabel('Title', 'text', 'task-title-input', true);
+  const titleLabel = createInputLabel('Titre', 'text', 'task-title-input', true); //Marie-Eva
   form.appendChild(titleLabel);
 
-  const notesLabel = createInputLabel('Notes', 'text', 'task-notes-input', false, true);
+  const notesLabel = createInputLabel('Description', 'text', 'task-notes-input', false, true); //Marie-Eva
   form.appendChild(notesLabel);
 
   const dueDateLabel = createInputLabel('Date', 'date', 'task-dueDate-input');
@@ -89,7 +89,7 @@ export function createToDoForm() {
 
   const submitBtn = document.createElement('input');
   submitBtn.type = 'submit';
-  submitBtn.value = 'Add Task';
+  submitBtn.value = 'Ajouter tâche';
   submitBtn.classList.add('task-submit-btn');
   form.appendChild(submitBtn);
 
